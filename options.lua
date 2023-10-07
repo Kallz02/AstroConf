@@ -7,10 +7,11 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
-    guifont = "JetBrainsMono Nerd Font:h14"
+    guifont = "JetBrainsMono Nerd Font:h13"
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
+    material_style = "deep ocean",
     autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
     cmp_enabled = true, -- enable completion at start
     autopairs_enabled = true, -- enable autopairs at start
@@ -18,6 +19,7 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
+    neovide_scale_factor = 1.0
   },
 }
 -- If you need more control, you can use the function()...end notation

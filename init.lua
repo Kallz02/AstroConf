@@ -50,7 +50,24 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "eslint"
+    },
+ config = {
+      eslint = function()
+        return {
+
+  root_dir = require("lspconfig.util").root_pattern(
+   '.eslintrc',
+   '.eslintrc.js',
+   '.eslintrc.cjs',
+   '.eslintrc.yaml',
+   '.eslintrc.yml',
+   '.eslintrc.json'
+   -- Disabled to prevent "No ESLint configuration found" exceptions
+   -- 'package.json',
+ ) 
+        }
+      end,
     },
   },
 
